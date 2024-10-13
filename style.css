@@ -1,7 +1,10 @@
+/* Thiết lập nền, font chữ và canh giữa */
 body {
   font-family: 'Inter', Arial, sans-serif;
   text-align: center;
-  background-color: #f0f0f5;
+  background-image: url('https://placekitten.com/1200/800'); /* Hình nền mèo dễ thương */
+  background-size: cover;
+  background-position: center;
   padding-top: 100px;
   margin: 0;
   height: 100vh;
@@ -14,7 +17,7 @@ body {
   max-width: 600px;
   margin: auto;
   padding: 20px;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.8); /* Nền trắng trong suốt để nổi bật chữ */
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
@@ -31,7 +34,7 @@ button {
   border-radius: 5px;
   border: none;
   margin: 10px;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Thêm hiệu ứng khi hover và nhấn */
 }
 
 .primary-btn {
@@ -43,6 +46,10 @@ button {
   background-color: #45a049;
 }
 
+.primary-btn:active {
+  transform: scale(0.95); /* Hiệu ứng thu nhỏ khi nhấn nút */
+}
+
 .troll-btn {
   background-color: #f44336;
   color: white;
@@ -52,11 +59,16 @@ button {
   background-color: #e41c1c;
 }
 
+.troll-btn:active {
+  transform: scale(0.95); /* Hiệu ứng thu nhỏ khi nhấn nút */
+}
+
 #message {
   margin-top: 20px;
 }
 
-#confetti-canvas {
+/* Hiệu ứng cho canvas confetti */
+#confetti-canvas, #fireworks-canvas {
   position: absolute;
   top: 0;
   left: 0;
