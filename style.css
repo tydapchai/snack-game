@@ -1,95 +1,55 @@
-/* Thiết lập nền, font chữ và canh giữa */
 body {
-  font-family: 'Inter', Arial, sans-serif;
-  text-align: center;
-  background-image: url('https://placekitten.com/1200/800'); /* Hình nền mèo dễ thương */
-  background-size: cover;
-  background-position: center;
-  padding-top: 100px;
-  margin: 0;
-  height: 100vh;
+  font-family: 'Inter', sans-serif;
+  background-color: #e0f7fa;
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100vh;
+  margin: 0;
 }
 
 .container {
-  max-width: 600px;
-  margin: auto;
+  text-align: center;
+  background-color: #ffffff;
   padding: 20px;
-  background-color: rgba(255, 255, 255, 0.8); /* Nền trắng trong suốt để nổi bật chữ */
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
 }
 
-h1 {
-  font-size: 28px;
+.title {
+  font-size: 36px;
+  color: #00796b;
   margin-bottom: 20px;
+  text-transform: uppercase;
 }
 
-button {
-  padding: 10px 20px;
-  font-size: 18px;
-  cursor: pointer;
-  border-radius: 5px;
-  border: none;
-  margin: 10px;
-  transition: background-color 0.3s ease, transform 0.2s ease; /* Thêm hiệu ứng khi hover và nhấn */
+canvas {
+  border: 4px solid #004d40;
+  background-color: #fafafa;
+  border-radius: 10px;
+}
+
+#scoreContainer {
+  margin-top: 10px;
+}
+
+#score {
+  font-size: 24px;
+  color: #004d40;
 }
 
 .primary-btn {
-  background-color: #4CAF50;
+  padding: 10px 20px;
+  background-color: #00796b;
   color: white;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
 }
 
 .primary-btn:hover {
-  background-color: #45a049;
-}
-
-.primary-btn:active {
-  transform: scale(0.95); /* Hiệu ứng thu nhỏ khi nhấn nút */
-}
-
-.troll-btn {
-  background-color: #f44336;
-  color: white;
-}
-
-.troll-btn:hover {
-  background-color: #e41c1c;
-}
-
-.troll-btn:active {
-  transform: scale(0.95); /* Hiệu ứng thu nhỏ khi nhấn nút */
-}
-
-#message {
-  margin-top: 20px;
-}
-
-/* Hiệu ứng cho canvas confetti */
-#confetti-canvas, #fireworks-canvas {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-}
-
-@media (max-width: 768px) {
-  body {
-      padding-top: 50px;
-  }
-
-  h1 {
-      font-size: 23px;
-      margin-bottom: 10px;
-  }
-
-  button {
-      padding: 8px 16px;
-      font-size: 16px;
-      margin-top: 10px;
-  }
+  background-color: #004d40;
 }

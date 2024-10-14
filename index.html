@@ -4,37 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>YOLO</title>
-    <link rel="stylesheet" href="./style.css">
+    <title>Snake Game</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container mx-auto">
-        <h1 class="text-2xl" id="init">Hey Linh👋, Can I Ask You Something?</h1>
-        <button onclick="startQuestions()" id="que" class="primary-btn">Sure, Ask Away!</button>
-
-        <div id="questions" style="display: none;">
-            <h1 class="text-2xl mt-8">Question:</h1>
-            <p>Do you want to become "study-buddy" with me?</p>
-            <button onclick="answerYes()" class="primary-btn">Yes</button>
-            <button onclick="answerNo()" class="troll-btn">No</button>
+    <div class="container">
+        <h1 class="title">Snake Game</h1>
+        <canvas id="gameCanvas"></canvas>
+        <div id="scoreContainer">
+            <span id="score">Score: 0</span>
         </div>
-
-        <div id="confirm" style="display: none;">
-            <h1 class="text-2xl mt-8">Are you sure?</h1>
-            <button onclick="confirmSure()" class="primary-btn">Sure</button>
-            <button onclick="confirmNo()" class="troll-btn">No</button>
-        </div>
-
-        <div id="message" style="display: none;">
-            <p id="messageText"></p>
-        </div>
+        <button onclick="startGame()" class="primary-btn">Start Game</button>
     </div>
 
-    <canvas id="confetti-canvas"></canvas>
-    <canvas id="fireworks-canvas"></canvas>
-
-    <script src="https://cdn.jsdelivr.net/npm/confetti-js"></script>
     <script src="script.js"></script>
 </body>
 </html>
