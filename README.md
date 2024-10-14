@@ -1,6 +1,6 @@
 # SNACK GAME 
 
-<h1 align="center"> AskHerOut.js 🌹</h1>
+<h1 align="center">SNAKE GAME 🐍🐍🐍🐍</h1>
 
 ## 📖 Description
 
